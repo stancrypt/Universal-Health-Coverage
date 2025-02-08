@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import chart
 
 # Create your views here.
 
@@ -11,5 +12,9 @@ def home(request):
 def dashboard(request):
     return render(request, 'uhc/dashboard.html', )
 
-def index(request):
-    return render(request, 'uhc/index.html', )
+def about(request):
+    return render(request, 'uhc/about.html', )
+
+def new_chart(request):
+    charts=chart()
+    return render(request, 'chart.html', {charts:chart})
