@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from . import chart
+from UHCapp.chart import calculate
+
 
 # Create your views here.
 
@@ -15,6 +16,6 @@ def dashboard(request):
 def about(request):
     return render(request, 'uhc/about.html', )
 
-def new_chart(request):
-    charts=chart()
-    return render(request, 'chart.html', {charts:chart})
+def charts(request):
+    cha= calculate()
+    return render(request, 'uhc/chart.html', {'cha':cha})
