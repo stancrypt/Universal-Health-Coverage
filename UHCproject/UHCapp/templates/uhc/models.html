@@ -1,0 +1,32 @@
+{% extends "uhc/layout.html" %}
+{% block content %}
+
+
+<h1>
+    FORMS
+</h1> 
+<body>
+    <h2>List of People</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for person in Person %}
+                <tr>
+                    <td>{{ person.first_name }}</td>
+                    <td>{{ person.last_name }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No people found.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+{% endblock  %}
