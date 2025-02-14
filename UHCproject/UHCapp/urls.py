@@ -6,8 +6,10 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('about/', views.about, name='about'),
     path('chart/', views.charts, name='chart'),
-    path('form/', views.get_name, name='form'),
-    path('model/', views.model, name='model')
+    path('login/', views.get_name, name='login'),
+    path('model/', views.model, name='model'),
+   
+
 
    
 ]

@@ -1,0 +1,14 @@
+{% extends "uhc/layout.html" %}
+{% block content %}
+
+  {% csrf_token %}
+  <form action="" method="get"></form>
+  <ul>
+    <div><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" target="_blank" >NAME{{ form.your_name}} </a></div>
+    <div><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" target="_blank" >SUBJECT{{ form.subject}} </a></div>
+    <div><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" target="_blank" >MESSAGE{{ form.message}} </a></div>
+    <div><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" target="_blank" >cc_myself{{ form.cc_myself}} </a></div>
+</ul>
+<button class=" styled" type="button">SUBMIT</button>
+</form>
+  {% endblock  %}
