@@ -1,0 +1,21 @@
+{% extends "uhc/layout.html" %}
+{% block content %}
+
+  <form action="" method="post">
+  {% csrf_token %}
+  <h1> PHC Adadama  </h1>
+  <p> In this section, you are required to provide the following information.
+        TOTAL EMPANELLED | ACCESS TO CARE | TOTAL REFERRED 
+  </p>
+
+  {{ form.empanelled }}
+  {{ form.access }}
+  {{ form.referred }}
+  <p>Has capitation been paid?</p>
+  {{ form.selection }}
+  <input type='submit' value='submit'>
+
+</form>
+
+
+  {% endblock  %}

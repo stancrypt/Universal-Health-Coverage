@@ -21,6 +21,7 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url "home" %}">Home</a>
               <a class="nav-item nav-link" href="{% url "about" %}">About</a>
+              <a class="nav-item nav-link" href="#">Service Providers</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
@@ -68,10 +69,23 @@
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-light" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-          Orders
+          MDA's
         </button>
         <div class="collapse" id="orders-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-light" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              Service Provider
+            </button>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-light" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  ABI LGA
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="{% url "phc" %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">PHC Adadama</a></li>
+                  </div>
+                </div>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Responses</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Processed</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Shipped</a></li>
