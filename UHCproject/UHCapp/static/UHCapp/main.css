@@ -103,16 +103,3 @@ body {
   background: white;
 }
 
-.container-wrapper {
-  display: flex;
-}
-
-.sidebar {
-  width: 280px; /* Same width as your sidebar */
-  flex-shrink: 0; /* Prevents the sidebar from shrinking */
-}
-
-.main-container {
-  flex-grow: 1; /* Allows the main container to take remaining space */
-  padding: 20px; /* Optional spacing */
-}
