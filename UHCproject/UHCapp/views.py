@@ -61,9 +61,9 @@ def get_name(request):
 
     return render(request, 'uhc/login.html', {'form': form, 'detail': detail})
 
-def submission_success(request, form_id):
-    response = FormResponse.objects.get(id=form_id)
-    return render(request, 'uhc/success.html', {'response': response})
+#def submission_success(request, form_id):
+    #response = FormResponse.objects.get(id=form_id)
+    #return render(request, 'uhc/success.html', {'response': response})
 
 
 def get_abi(request):
