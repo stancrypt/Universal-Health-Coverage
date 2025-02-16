@@ -1,0 +1,17 @@
+{% extends "uhc/layout.html" %}
+{% block content %}
+
+  <form action="" method="post">
+  {% csrf_token %}
+    {{ form.user_name }}
+    {{ form.subject }}
+    {{ form.message }}
+    {{ form.sender }}
+    {{ form.c_myself }}
+
+  <input type='submit' value='submit'> 
+
+</form>
+
+
+  {% endblock  %}

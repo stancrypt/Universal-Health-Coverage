@@ -24,7 +24,7 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">Login</a>
+              <a class="nav-item nav-link" href="{% url "login" %}">Login</a>
               <a class="nav-item nav-link" href="#">Register</a>
             </div>
           </div>
@@ -60,7 +60,7 @@
         <div class="collapse" id="dashboard-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="{% url "dashboard" %}" target="_blank" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Overview</a></li>
-            <li><a href="{% url "chart" %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Weekly</a></li>
+            <li><a href="{% url "charts" %}" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Weekly</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Monthly</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Annually</a></li>
           </ul>
@@ -72,7 +72,7 @@
         </button>
         <div class="collapse" id="orders-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">New</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Responses</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Processed</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Shipped</a></li>
             <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-light">Returned</a></li>
