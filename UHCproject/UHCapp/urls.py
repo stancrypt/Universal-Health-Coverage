@@ -1,6 +1,6 @@
 from . import views
 from django.urls import path
-from .views import get_name, submission_success, get_abi, submission_success1
+from .views import get_abi, submission_success1
 
 urlpatterns = [
     path('', views.home, name='home'),
